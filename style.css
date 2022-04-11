@@ -1,0 +1,102 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+/* colors and images */
+:root {
+--nav-links-color: #fff;
+--button-hover-color: #878584;
+--backoffice-menu-bg: #343a40;
+--table-head-bg: #e9ecef;
+--nav-link-hover-color: #f79800;
+--footer-color: #e3e3e3;
+--dark-layer: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6));
+--edit-button-color: #ffa207;
+--delete-button-color: #dc3545;
+--pagination-active-bg: #007bff;
+--text-color: #fff;
+--header-bg-image: url(img_bg_backoffice_usuario.jpg);
+}
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  transition-duration: 0.2s;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header{
+  background-image: var(--dark-layer), var(--header-bg-image);
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  box-sizing: border-box;
+  color: var(--text-color);
+  padding: 2% 5%;
+  display: flex;
+  list-style-type:none;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+
+footer {
+  background-color: var(--footer-color);
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+
+header :is(a:hover,a.active) {
+  color: var(--nav-link-hover-color);
+}
+
+.site_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site_menu > nav, .backoffice_menu {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.backoffice_menu {
+  background-color: var(--backoffice-menu-bg);
+  color: var(--nav-links-color);
+  font-size: 0.7rem;
+  padding: 1rem 5%;
+}
+
+.title {
+  flex: auto;
+
+}
+
+.btn2{
+  cursor:pointer;
+  background-color: #fff;
+  color: #dc3545;
+
+}
+
+.btn{
+  cursor:pointer;
+  background-color: #fff;
+  color: #f79800;
+  margin-right: 8px;
+
+}
+
+.tab{
+  margin: 0 auto;
+
+}
